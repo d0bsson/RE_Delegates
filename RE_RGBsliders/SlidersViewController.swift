@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SlidersViewController: UIViewController {
     
     @IBOutlet weak var mainView: UIView!
     
@@ -18,10 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
-    
-    let cg: CGFloat = 0.44
-    let cg1: CGFloat = 0.33
-    let cg2: CGFloat = 0.22
     
     override func viewDidLoad() {
         super.viewDidLoad()
