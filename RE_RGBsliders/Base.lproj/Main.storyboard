@@ -151,7 +151,6 @@
                     <connections>
                         <outlet property="blueSlider" destination="rzl-GX-7gz" id="RWu-Ix-abI"/>
                         <outlet property="blueSliderValue" destination="4FJ-KN-YF9" id="cAR-cE-TXf"/>
-                        <outlet property="checkLabel" destination="dR0-Os-9ur" id="vEa-91-af3"/>
                         <outlet property="greenSlider" destination="ZoJ-EG-qBW" id="dFE-ri-WMv"/>
                         <outlet property="greenSliderValue" destination="Pxf-bN-aCd" id="3KL-U4-1vQ"/>
                         <outlet property="mainView" destination="t5M-BS-3Zy" id="JtE-t5-981"/>

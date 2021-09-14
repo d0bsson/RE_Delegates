@@ -9,9 +9,7 @@ import UIKit
 
 class SlidersViewController: UIViewController {
     
-    @IBOutlet weak var mainView: UIView!
-    @IBOutlet weak var checkLabel: UILabel!
-    
+    @IBOutlet weak var mainView: UIView!    
     
     @IBOutlet weak var redSliderValue: UILabel!
     @IBOutlet weak var greenSliderValue: UILabel!
@@ -21,22 +19,22 @@ class SlidersViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-    var checkMid: String!
+    var viewColor: UIColor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sliderChanched()
-        checkLabel.text = checkMid
+        mainView.backgroundColor = viewColor
     }
 
     @IBAction func sliderChanched() {
         
-//        mainView.backgroundColor = UIColor(
-//            red: CGFloat(redSlider.value),
-//            green: CGFloat(greenSlider.value),
-//            blue: CGFloat(blueSlider.value),
-//            alpha: 1
-//        )
+        mainView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value),
+            alpha: 1
+        )
                 
         redSliderValue.text = String(format: "%.2f", redSlider.value)
         greenSliderValue.text = String(format: "%.2f", greenSlider.value)
