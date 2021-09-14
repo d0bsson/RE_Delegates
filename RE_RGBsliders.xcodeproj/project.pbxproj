@@ -58,16 +58,24 @@
 		D7749AFF26DD07A90075CA01 /* RE_RGBsliders */ = {
 			isa = PBXGroup;
 			children = (
+				D7B6AF5726EF614900A4C5A6 /* ViewControllers */,
 				D7749B0026DD07A90075CA01 /* AppDelegate.swift */,
 				D7749B0226DD07A90075CA01 /* SceneDelegate.swift */,
-				D7749B0426DD07A90075CA01 /* SlidersViewController.swift */,
 				D7749B0626DD07A90075CA01 /* Main.storyboard */,
 				D7749B0926DD07AE0075CA01 /* Assets.xcassets */,
 				D7749B0B26DD07AE0075CA01 /* LaunchScreen.storyboard */,
 				D7749B0E26DD07AE0075CA01 /* Info.plist */,
-				D7B6AF5426EF5F7100A4C5A6 /* MainViewController.swift */,
 			);
 			path = RE_RGBsliders;
+			sourceTree = "<group>";
+		};
+		D7B6AF5726EF614900A4C5A6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D7749B0426DD07A90075CA01 /* SlidersViewController.swift */,
+				D7B6AF5426EF5F7100A4C5A6 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
