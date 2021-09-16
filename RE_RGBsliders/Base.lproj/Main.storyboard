@@ -150,7 +150,7 @@
                     <navigationItem key="navigationItem" id="Dhf-V8-TUN">
                         <barButtonItem key="rightBarButtonItem" title="Back" id="rMt-me-etU">
                             <connections>
-                                <segue destination="vWx-Ot-efh" kind="unwind" unwindAction="unwindFor:" id="WDZ-qA-wpF"/>
+                                <action selector="backTapped:" destination="BYZ-38-t0r" id="ELW-Z3-UL5"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -165,7 +165,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <exit id="vWx-Ot-efh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1870" y="78"/>
         </scene>

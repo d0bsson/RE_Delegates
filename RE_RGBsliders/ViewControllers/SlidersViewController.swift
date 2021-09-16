@@ -8,7 +8,6 @@
 import UIKit
 
 
-
 class SlidersViewController: UIViewController {
     
     @IBOutlet weak var mainView: UIView!    
@@ -21,12 +20,14 @@ class SlidersViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
+    
     var viewColor: UIColor!
+    var delegate: SlidersViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         sliderChanched()
-        mainView.backgroundColor = viewColor
+//        mainView.backgroundColor = viewColor
     }
 
     @IBAction func sliderChanched() {
@@ -41,6 +42,10 @@ class SlidersViewController: UIViewController {
         redSliderValue.text = String(format: "%.2f", redSlider.value)
         greenSliderValue.text = String(format: "%.2f", greenSlider.value)
         greenSliderValue.text = String(format: "%.2f", blueSlider.value)
+    }
+    @IBAction func backTapped(_ sender: Any) {
+        delegate.setNewColor(for: mainView.backgroundColor ?? .red)
+        dismiss(animated: true)
     }
     
 }
