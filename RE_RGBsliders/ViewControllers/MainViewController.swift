@@ -9,10 +9,9 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.1921568662, green: 0.007843137719, blue: 0.09019608051, alpha: 1)
+        view.backgroundColor = .red
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -20,6 +19,7 @@ class MainViewController: UIViewController {
         guard let slidersVC = navigationVC.topViewController as? SlidersViewController else { return }
         slidersVC.viewColor = view.backgroundColor
     }
+    
 }
 
 

@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 class SlidersViewController: UIViewController {
     
     @IBOutlet weak var mainView: UIView!    

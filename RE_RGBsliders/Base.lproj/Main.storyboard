@@ -147,7 +147,13 @@
                             <constraint firstItem="t5M-BS-3Zy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="tYV-wW-dKK"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Dhf-V8-TUN"/>
+                    <navigationItem key="navigationItem" id="Dhf-V8-TUN">
+                        <barButtonItem key="rightBarButtonItem" title="Back" id="rMt-me-etU">
+                            <connections>
+                                <segue destination="vWx-Ot-efh" kind="unwind" unwindAction="unwindFor:" id="WDZ-qA-wpF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="blueSlider" destination="rzl-GX-7gz" id="RWu-Ix-abI"/>
                         <outlet property="blueSliderValue" destination="4FJ-KN-YF9" id="cAR-cE-TXf"/>
@@ -159,6 +165,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="vWx-Ot-efh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1870" y="78"/>
         </scene>
