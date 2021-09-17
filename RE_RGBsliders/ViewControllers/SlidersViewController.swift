@@ -27,7 +27,7 @@ class SlidersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sliderChanched()
-//        mainView.backgroundColor = viewColor
+        mainView.backgroundColor = viewColor
     }
 
     @IBAction func sliderChanched() {
@@ -43,6 +43,7 @@ class SlidersViewController: UIViewController {
         greenSliderValue.text = String(format: "%.2f", greenSlider.value)
         greenSliderValue.text = String(format: "%.2f", blueSlider.value)
     }
+    
     @IBAction func backTapped(_ sender: Any) {
         delegate.setNewColor(for: mainView.backgroundColor ?? .red)
         dismiss(animated: true)
