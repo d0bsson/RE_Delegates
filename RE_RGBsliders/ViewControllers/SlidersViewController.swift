@@ -27,6 +27,7 @@ class SlidersViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         sliderChanched()
+        setSliders()
         mainView.backgroundColor = viewColor
     }
 
@@ -47,6 +48,15 @@ class SlidersViewController: UIViewController {
     @IBAction func backTapped(_ sender: Any) {
         delegate.setNewColor(for: mainView.backgroundColor ?? .red)
         dismiss(animated: true)
+    }
+    
+    private func setSliders() {
+        let ciColor = CIColor(color: viewColor)
+        
+        redSlider.value = Float(ciColor.red)
+        greenSlider.value = Float(ciColor.green)
+        blueSlider.value = Float(ciColor.blue)
+        
     }
     
 }
