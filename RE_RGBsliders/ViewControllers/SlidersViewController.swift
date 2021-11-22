@@ -32,7 +32,6 @@ class SlidersViewController: UIViewController {
     }
 
     @IBAction func sliderChanched() {
-        
         mainView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
@@ -42,7 +41,7 @@ class SlidersViewController: UIViewController {
                 
         redSliderValue.text = String(format: "%.2f", redSlider.value)
         greenSliderValue.text = String(format: "%.2f", greenSlider.value)
-        greenSliderValue.text = String(format: "%.2f", blueSlider.value)
+        blueSliderValue.text = String(format: "%.2f", blueSlider.value)
     }
     
     @IBAction func backTapped(_ sender: Any) {
