@@ -20,7 +20,6 @@ class SlidersViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
-    
     var viewColor: UIColor!
     var delegate: SlidersViewControllerDelegate!
     
@@ -37,15 +36,16 @@ class SlidersViewController: UIViewController {
             green: CGFloat(greenSlider.value),
             blue: CGFloat(blueSlider.value),
             alpha: 1
+        
         )
-                
+        delegate.setNewColor(for: mainView.backgroundColor ?? .red)
         redSliderValue.text = String(format: "%.2f", redSlider.value)
         greenSliderValue.text = String(format: "%.2f", greenSlider.value)
         blueSliderValue.text = String(format: "%.2f", blueSlider.value)
     }
     
     @IBAction func backTapped(_ sender: Any) {
-        delegate.setNewColor(for: mainView.backgroundColor ?? .red)
+        
         dismiss(animated: true)
     }
     
@@ -55,8 +55,6 @@ class SlidersViewController: UIViewController {
         redSlider.value = Float(ciColor.red)
         greenSlider.value = Float(ciColor.green)
         blueSlider.value = Float(ciColor.blue)
-        
     }
-    
 }
 
